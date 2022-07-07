@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import './App.css'
+import SearchIcon from './search.svg'
 
 //f36bada8
 
@@ -18,7 +20,13 @@ const App = () => {
     }, [])
 
     return (
-        <h1>App</h1>
+        <div className='app'>
+            <h1>Movie App</h1>
+            <div className="search">
+                <input placeholder='search for movies' />
+            </div>
+        </div>
+
     );
 }
 
